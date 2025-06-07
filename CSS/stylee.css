@@ -1,0 +1,276 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+/* Botão de Logout */
+.logout, .btn-logout {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logout:hover, .btn-logout:hover {
+    background-color: #c82333;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+/* Formulários */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    flex: 1;
+    min-width: 150px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Botões de Ações */
+.action-buttons a {
+    padding: 5px 10px;
+    margin: 0 2px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    display: inline-block;
+    text-align: center;
+}
+
+.action-buttons a.concluir {
+    background-color: #28a745;
+}
+
+.action-buttons a.concluir:hover {
+    background-color: #218838;
+}
+
+.action-buttons a.editar {
+    background-color: #ffc107;
+    color: black;
+}
+
+.action-buttons a.editar:hover {
+    background-color: #e0a800;
+}
+
+.action-buttons a.excluir {
+    background-color: #dc3545;
+}
+
+.action-buttons a.excluir:hover {
+    background-color: #c82333;
+}
+
+/* Modal Estilo */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background: #fff;
+    margin: auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    /* Remover border-radius para bordas quadradas */
+}
+
+.modal-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#confirm-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+#confirm-btn:hover {
+    background-color: #218838;
+}
+
+.modal-content button:not(#confirm-btn) {
+    background-color: #dc3545;
+    color: white;
+}
+
+.modal-content button:not(#confirm-btn):hover {
+    background-color: #c82333;
+}
+
+/* Botões de Filtro */
+.btn-filtro, .btn-historico {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 5px 5px 20px 0;
+    background-color: #6c757d;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-filtro:hover, .btn-historico:hover {
+    background-color: #5a6268;
+}
+
+/* Badge de tarefa concluída */
+.badge-concluida {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* Header */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Seletores de Prioridade */
+.prioridade-select select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    appearance: none;
+}
+
+/* Filtros */
+.filtros {
+    margin-bottom: 20px;
+}
+
+.filtros a {
+    margin-right: 10px;
+}
+
+/* Modal de edição */
+.form-editar label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.form-editar input[type="text"],
+.form-editar input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Botoes de Modal */
+.botoes-modal {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes-modal .btn-confirm,
+.botoes-modal .btn-cancel {
+    flex: 1;
+    margin: 0 5px;
+}
